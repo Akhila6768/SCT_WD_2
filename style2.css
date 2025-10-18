@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  width: 350px;
+  max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.display {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  flex: 1 1 45%;
+  border: none;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.start {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+.pause {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  box-shadow: 0 0 10px #ff416c;
+}
+
+.reset {
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  box-shadow: 0 0 10px #ff5e62;
+}
+
+.lap {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  box-shadow: 0 0 10px #00b09b;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.laps {
+  list-style: none;
+  margin-top: 1rem;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.laps li {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.95rem;
+  border-left: 3px solid #00c6ff;
+  transition: all 0.2s ease;
+}
+
+.laps li:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
